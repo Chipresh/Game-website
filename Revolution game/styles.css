@@ -116,7 +116,7 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 700px;
+    height: 500px;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     -webkit-filter: grayscale(100%);
@@ -145,8 +145,8 @@ section {
 
 
 #images {
-    height: 500px;
-    width: 565px;
+    height: 450px;
+    width: 560px;
     object-fit: cover;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -291,8 +291,8 @@ main {
 
 
 #interact-img {
-    height: 500px;
-    width: 565px;
+    height: 450px;
+    width: 540px;
     border-radius: 20px 200px 200px 200px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -406,14 +406,14 @@ footer {
 
 @media screen and (max-width:900px) {
 
-html{
-    overflow-x: hidden;
-}
+    html {
+        overflow-x: hidden;
+    }
 
 
-body{
-    overflow: hidden;
-}
+    body {
+        overflow: hidden;
+    }
 
 
     header {
@@ -616,7 +616,7 @@ body{
         font-family: 'Syne', sans-serif;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 3.6em;
+        font-size: 3em;
     }
 
 
@@ -632,7 +632,7 @@ body{
     #welcome-text {
         font-size: 20px;
         line-height: 1.4em;
-        width: 300px;
+        width: 310px;
         font-family: 'Figtree', sans-serif;
     }
 
@@ -650,9 +650,14 @@ body{
     }
 
 
+    #boxes {
+        align-items: center;
+    }
+
+
     #images {
-        height: 300px;
-        width: 370px;
+        height: 250px;
+        width: 320px;
         object-fit: cover;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
@@ -660,8 +665,29 @@ body{
     }
 
 
+    h2 {
+        font-size: 31px;
+        font-weight: bold;
+        font-family: 'Syne', sans-serif;
+        color: var(--primary-color);
+        /* padding:1px; */
+    }
+
+
+    
+#texts {
+    width: 320px;
+    line-height: 1.4em;
+    font-size: 20px;
+    font-family: 'Figtree', sans-serif;
+    color: var(--primary-color);
+}
+
+
+
+
     #card {
-        width: 370px;
+        width: 320px;
         height: 200px;
         background: var(--bg-color2);
         border-radius: 30px;
@@ -678,7 +704,7 @@ body{
         filter: grayscale(100%);
         border-radius: 20px;
         margin-top: 30px;
-        margin-left: 150px;
+        margin-left: 130px;
     }
 
 
@@ -691,6 +717,14 @@ body{
         gap: 50px;
         padding-top: 70px;
         border: none;
+    }
+
+
+    #story-text {
+        line-height: 1.5em;
+        color: var(--primary-color);
+        font-family: 'Figtree', sans-serif;
+        width: 320px;
     }
 
 
@@ -710,8 +744,17 @@ body{
         justify-content: center;
         gap: 30px;
         border: 1px solid #222222;
-        width: 90%;
+        width: 80%;
         margin-top: 0px;
+    }
+
+
+    #interact-texts {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5em;
+        gap: 50px;
+        /* padding-left: 10px; */
     }
 
 
@@ -720,9 +763,18 @@ body{
     }
 
 
+    #interact-texts p {
+        line-height: 1.5em;
+        color: var(--primary-color);
+        font-family: 'Figtree', sans-serif;
+        width: 320px;
+    }
+    
+
+
     #interact-img {
-        height: 380px;
-        width: 360px;
+        height: 300px;
+        width: 330px;
         border-radius: 20px 200px 200px 200px;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
@@ -731,11 +783,11 @@ body{
 
     #embark-texts {
         line-height: 1.5em;
-        width: 430px;
+        width: 350px;
+        padding: 10px;
         color: var(--primary-color);
         font-family: 'Figtree', sans-serif;
     }
-
 
 
     footer {
@@ -746,33 +798,36 @@ body{
     }
 
 
-
     .footer-links {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
-
     }
 
 
     #links {
         font-family: 'Figtree', sans-serif;
-        cursor: pointer;
-        padding-right: 320px;
+        padding-right: 290px;
         gap: 8px;
     }
 
 
-    
-.social-icons {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    gap: 20px;
-    cursor: pointer;
-    padding: 20px 20px 30px 30px;
-}
+    #links p {
+        cursor: pointer;
+    }
+
+
+    .social-icons {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        padding: 20px 20px 30px 30px;
+    }
+
+
 
 }
